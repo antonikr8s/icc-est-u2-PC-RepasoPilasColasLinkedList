@@ -122,7 +122,7 @@ public class LogicaClasificacion {
             }
         }
 
-        // combina las listas: primero pares | luego impares
+        // combina las listas ( primero pares | luego impares )
         LinkedList<Integer> resultado = new LinkedList<>();
         resultado.addAll(pares);
         resultado.addAll(impares);
