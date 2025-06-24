@@ -83,7 +83,7 @@ public class LogicaClasificacion {
             int temp = pila.pop();
 
             // mueve elementos de pilaAuxiliar a pila original si son mayores que temp
-            while (!pilaAuxiliar.isEmpty() && pilaAuxiliar.peek() > temp) {
+            while (!pilaAuxiliar.isEmpty() && pilaAuxiliar.peek() < temp) {
                 pila.push(pilaAuxiliar.pop());
             }
 
