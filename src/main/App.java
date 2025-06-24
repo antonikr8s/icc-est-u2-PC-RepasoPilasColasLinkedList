@@ -11,19 +11,19 @@ public class App {
         // NO MODIFICAR ESTE CÓDIGO
         var estudiante = StudentValidator.validarDatos();
         System.out.println("👤 Estudiante: " + estudiante.nombre());
-        System.out.println("✉️  Correo: " + estudiante.correo());
+        System.out.println("✉️ Correo: " + estudiante.correo());
         // NO MODIFICAR HASTA AQUÍ
 
         LogicaClasificacion logica = new LogicaClasificacion();
         // Probar invertirCadena
         String texto = "Hola Mundo";
         String invertido = logica.invertirCadena(texto);
-        System.out.println("invertirCadena(\"" + texto + "\"): " + invertido);
+        System.out.println("\n1. invertirCadena (\"" + texto + "\"): " + invertido);
 
         // Probar validarSimbolos
         String expresion = "{[()]}";
         boolean balanceado = logica.validarSimbolos(expresion);
-        System.out.println("validarSimbolos(\"" + expresion + "\"): " + balanceado);
+        System.out.println("\n2. validarSimbolos (\"" + expresion + "\"): " + balanceado);
 
         // Probar ordenarPila
         Stack<Integer> pila = new Stack<>();
@@ -31,10 +31,10 @@ public class App {
         pila.push(1);
         pila.push(4);
         pila.push(2);
-        System.out.println("ordenarPila([3, 1, 4, 2]): " + logica.ordenarPila(pila));
+        System.out.println("\n3. ordenarPila ([3, 1, 4, 2]): " + logica.ordenarPila(pila));
 
         // Probar clasificarPorParidad
         LinkedList<Integer> original = new LinkedList<>(Arrays.asList(1, 2, 3, 4, 5, 6));
-        System.out.println("clasificarPorParidad([1, 2, 3, 4, 5, 6]): " + logica.clasificarPorParidad(original));
+        System.out.println("\n4. clasificarPorParidad ([1, 2, 3, 4, 5, 6]): " + logica.clasificarPorParidad(original));
     }
 }
